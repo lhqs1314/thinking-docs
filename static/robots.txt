@@ -1,0 +1,37 @@
+# robots.txt for https://docs.thinking.ninthfeast.com
+
+User-agent: *
+Allow: /
+
+# 优先抓取重要页面
+Allow: /docs/
+
+# 禁止抓取的目录
+Disallow: /search
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap 位置
+Sitemap: https://docs.thinking.ninthfeast.com/sitemap.xml
+
+# 特定爬虫优化
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+
+# 屏蔽恶意爬虫
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

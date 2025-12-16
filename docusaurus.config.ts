@@ -11,11 +11,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-thinking-methodology.com',
+  url: 'https://docs.thinking.ninthfeast.com',
   baseUrl: '/',
 
-  organizationName: 'lhqs',
-  projectName: 'thinking-methodology',
+  organizationName: 'lhqs1314',
+  projectName: 'thinking-docs',
 
   onBrokenLinks: 'warn',
 
@@ -35,6 +35,12 @@ const config: Config = {
           showLastUpdateTime: true,
           showLastUpdateAuthor: false,
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/search/**'],
+          filename: 'sitemap.xml',
+        },
         blog: false, // 禁用博客功能
         theme: {
           customCss: './src/css/custom.css',
@@ -45,6 +51,18 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/social-card.svg',
+
+    metadata: [
+      {name: 'keywords', content: '思维方法论, 分析思考, 认知升级, 思维模型, 商业分析, 批判性思维, 元认知, 博弈论, 决策思维'},
+      {name: 'author', content: 'lhqs'},
+      {name: 'contact', content: 'lhqs1314@gmail.com'},
+      {name: 'description', content: '系统梳理分析问题、深度思考的方法论体系。9大模块、42个主题,从思维框架到商业实战,全面提升思维质量。'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:site_name', content: '分析思考方法论'},
+      {property: 'og:locale', content: 'zh_CN'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:creator', content: '@lhqs'},
+    ],
 
     // 颜色模式配置
     colorMode: {
@@ -64,19 +82,13 @@ const config: Config = {
       hideOnScroll: true,
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: '📚 完整框架',
-        },
-        {
           type: 'search',
           position: 'right',
         },
         {
           type: 'html',
           position: 'right',
-          value: '<a href="https://github.com" class="navbar__link" target="_blank" rel="noopener noreferrer">⭐ GitHub</a>',
+          value: '<a href="https://github.com/lhqs1314/thinking-docs" class="navbar__link" target="_blank" rel="noopener noreferrer">⭐ GitHub</a>',
         },
       ],
     },
@@ -131,12 +143,12 @@ const config: Config = {
               to: '/docs/框架总览#使用指南',
             },
             {
-              html: '<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>',
+              html: '<a href="https://github.com/lhqs1314/thinking-docs" target="_blank" rel="noopener noreferrer">GitHub</a>',
             },
           ],
         },
       ],
-      copyright: `思维的质量决定人生的质量 © ${new Date().getFullYear()} · 构建于 Docusaurus`,
+      copyright: `思维的质量决定人生的质量<br/>© ${new Date().getFullYear()} <a href="https://github.com/lhqs1314" target="_blank" rel="noopener noreferrer">lhqs</a> · 联系方式: <a href="mailto:lhqs1314@gmail.com">lhqs1314@gmail.com</a><br/>构建于 <a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a>`,
     },
 
     // 代码高亮
