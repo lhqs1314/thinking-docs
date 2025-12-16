@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 - 浅绿 -->
+  <circle cx="100" cy="100" r="95" fill="#f0fdf4" stroke="#166534" stroke-width="2"/>
+
+  <!-- 思维层次 - 三层递进的圆环 -->
+  <!-- 外层 - 最浅 -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#86efac" stroke-width="8" opacity="0.4"/>
+
+  <!-- 中层 -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#22c55e" stroke-width="8" opacity="0.6"/>
+
+  <!-- 内层 - 最深,主色 -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#166534" stroke-width="10"/>
+
+  <!-- 中心点 - 核心思维 -->
+  <circle cx="100" cy="100" r="12" fill="#166534"/>
+
+  <!-- 四个方向的连接线 - 代表多元视角 -->
+  <line x1="100" y1="30" x2="100" y2="12" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+  <line x1="170" y1="100" x2="188" y2="100" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="170" x2="100" y2="188" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="100" x2="12" y2="100" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+</svg>
